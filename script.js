@@ -3,24 +3,27 @@
 document.getElementById('enter').addEventListener('click', setItem);
 document.getElementById('clearAll').addEventListener('click', clearAll);
 
-// function: set new divs and content;
+// function: set new divs, content and btns;
 
 function setItem(){
     
+    // new row
     let newDiv = document.createElement('div');
     newDiv.setAttribute('class', 'newDivs');
 
+    // p element in new row
     let newP = document.createElement('p');
     newP.textContent = document.getElementById('input').value;
     
+    // Done button (line-through)
     let btnDone = document.createElement('div');
     btnDone.textContent = "Done";
     btnDone.setAttribute('class', 'btnDone');
     btnDone.addEventListener('click', strikethrough)
 
+    // Delete button
     let btnDelete = document.createElement('div');
     btnDelete.textContent = "Delete";
-    btnDelete.setAttribute('class', 'btnDelete');
     btnDelete.addEventListener('click', deleteRow);
 
     newDiv.appendChild(newP);
@@ -46,9 +49,10 @@ function deleteRow(x){
     x.currentTarget.parentNode.parentNode.removeChild(x.currentTarget.parentNode)
 }
 
+//function toggle line-through
 
 function strikethrough(x){
-    if (x.currentTarget.parentNode.firstChild.style.textDecoration === "line-through"){
+    if (x.currentTarget.parentNode.firstChild.style.textDecoration === 'line-through'){
         x.currentTarget.parentNode.firstChild.style.textDecoration = 'none';
     }
     else {
