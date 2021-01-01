@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+#list {
+    /* border: blue solid 1px; */
+    width: 40rem;
+}
+#field {
+    display: flex;
+    justify-content: ;
+    border: green solid 1px;
+}
+button {
+    width: 8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#input {
+    width: 24rem;
+    height: 2rem;
+}
+#listBody {
+    /* border: blue solid 1px; */
+}
+p {
+    margin-left: .7rem;
+    margin-top: .7rem;
+}
+#listBody div{
+    border: blue solid 1px;
+    height: 2rem;
+}
+.newDivs {
+    display: flex;
+}
+.newDivs div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+}
+.btnDone {
+    margin-left: auto;
+}
